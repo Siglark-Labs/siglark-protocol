@@ -1,0 +1,35 @@
+# ── Leak guards: this is a PUBLIC repo. Nothing confidential belongs here. ──
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+id_rsa*
+id_ed25519*
+secrets/
+.secrets/
+credentials.json
+service-account*.json
+
+# Confidential business / research material (wrong repo — use siglark-business / siglark-research)
+dataroom/
+finance/
+legal/
+*-confidential*
+*-internal*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Dependencies / build
+node_modules/
+dist/
+build/
